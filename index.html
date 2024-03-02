@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  </head>
+  <body>
+    <!-- Navbar Starts Here -->
+    <header id="header">
+      <a href="#" class="logo">Port<span>folio</span>.</a>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+        <i class="fa-solid fa-xmark" id="close"></i>
+      </nav>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+    </header>
+    <!-- Navbar Ends Here -->
+
+    <!-- Home Section Starts Here -->
+    <section id="home" class="slide">
+      <div class="container">
+        <div class="header-text">
+          <p>Hi, I'm</p>
+          <h1 class="animate__animated animate__zoomIn animate__delay-1s">
+            Pushpraj Singh Chauhan
+          </h1>
+          <p>Full Stack Web Developer</p>
+        </div>
+        <div class="home-img">
+          <img src="assets/images/coder.jpg" alt="home" />
+        </div>
+      </div>
+    </section>
+    <!-- Home Section Ends Here -->
+
+    <!-- About Section Starts Here -->
+    <section id="about" class="slide">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/images/about.jpg" alt="about" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="animate__animated animate__rotateIn">
+              About <span>Me</span>
+            </h1>
+            <p class="content">
+              Enthusiastic ECE student exploring opportunities in IT sector,
+              skilled in programming and development, being committed to ongoing
+              professional growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Section Ends Here -->
+
+    <!-- Skills Section Starts Here -->
+    <section id="skills" class="slide">
+      <div class="container">
+        <h2 class="animate__animated animate__heartBeat">My Skills</h2>
+      </div>
+      <div class="skills-main">
+        <div class="skill-left content">
+          <div class="skill-bar">
+            <div class="info">
+              <p>Java SE</p>
+              <p>85%</p>
+            </div>
+            <div class="bar">
+              <span class="java"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>Jakarta EE</p>
+              <p>70%</p>
+            </div>
+            <div class="bar">
+              <span class="jee"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>SQL</p>
+              <p>60%</p>
+            </div>
+            <div class="bar">
+              <span class="sql"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>JDBC</p>
+              <p>75%</p>
+            </div>
+            <div class="bar">
+              <span class="jdbc"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>C++</p>
+              <p>75%</p>
+            </div>
+            <div class="bar">
+              <span class="cpp"></span>
+            </div>
+          </div>
+        </div>
+        <div class="skill-right content">
+          <div class="skill-bar">
+            <div class="info">
+              <p>HTML</p>
+              <p>70%</p>
+            </div>
+            <div class="bar">
+              <span class="html"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>CSS</p>
+              <p>65%</p>
+            </div>
+            <div class="bar">
+              <span class="css"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>JavaScript</p>
+              <p>70%</p>
+            </div>
+            <div class="bar">
+              <span class="js"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>Github</p>
+              <p>65%</p>
+            </div>
+            <div class="bar">
+              <span class="github"></span>
+            </div>
+          </div>
+          <div class="skill-bar">
+            <div class="info">
+              <p>Springboot</p>
+              <p>40%</p>
+            </div>
+            <div class="bar">
+              <span class="spring"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skills Section Ends Here -->
+
+    <!-- Portfolio Section Starts Here -->
+    <section id="portfolio" class="slide">
+      <div class="container">
+        <h2 class="animate__animated animate__bounce">Latest Projects</h2>
+      </div>
+      <div class="portfolio-container">
+        <div class="portfolio-content">
+          <img src="assets/images/portfolio-1.jpg" alt="" />
+          <div class="portfolio-box">
+            <h4 class="title">OK-Tummy! GUI App</h4>
+            <p class="desc">
+              Developed a Java GUI Application dealing with food delivery. Used
+              Spoonacular API, Oracle Database, Java Swing for achieving this.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://drive.google.com/file/d/1MzpfMvoUhb238OOV7vby5eFmBq7IELvR/view?usp=sharing"
+                class="button"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/PushprajSChauhan/ok-tummy-app"
+                class="button"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <img src="assets/images/portfolio-2.jpg" alt="" />
+          <div class="portfolio-box">
+            <h4 class="title">MysticXMart GUI App</h4>
+            <p class="desc">
+              Developed a Mart Management Application using Java. Generated
+              barcodes for products in stock and bills for products sold. Used
+              Oracle Database and Java Swing to achieve this.
+            </p>
+            <div class="buttons">
+              <a href="" class="button">Live Demo</a>
+              <a
+                href="https://github.com/PushprajSChauhan/mysticXmart"
+                class="button"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <img src="assets/images/portfolio-3.jpg" alt="" />
+          <div class="portfolio-box">
+            <h4 class="title">Portfolio Website</h4>
+            <p class="desc">
+              Created a Personal Portfolio website reflecting my expertise in
+              website development. Focused on making it responsive and storing
+              input from contact form in Google Sheets. Used HTML, CSS, JS to do
+              so.
+            </p>
+            <div class="buttons">
+              <a href="#" class="button">Live Demo</a>
+              <a
+                href="https://github.com/PushprajSChauhan/portfolio-website"
+                class="button"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <img src="assets/images/portfolio-4.jpg" alt="" />
+          <div class="portfolio-box">
+            <h4 class="title">Travel Website</h4>
+            <p class="desc">
+              Designed a Travel Planning website which provides the information
+              regarding tourist places in a country or region. Used HTML, CSS,
+              JS, Bootstrap to achieve this.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://drive.google.com/file/d/1h2ecBRkkPBTANHXWOo3HcM5qznxghpSQ/view?usp=sharing"
+                class="button"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/PushprajSChauhan/travel-website"
+                class="button"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <img src="assets/images/portfolio-5.jpg" alt="" />
+          <div class="portfolio-box">
+            <h4 class="title">Amazon Website Clone</h4>
+            <p class="desc">
+              Developed a basic clone of the famous e-commerce website Amazon as
+              a beginner and tried to gain confidence in the minute details of
+              designing.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://drive.google.com/file/d/1tH4eOxQwjzKku3aCqOddVwCXlW4V5S9H/view?usp=sharing"
+                class="button"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/PushprajSChauhan/amazon-clone"
+                class="button"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="portfolio-content">
+          <img src="assets/images/portfolio-6.jpg" alt="" />
+          <div class="portfolio-box">
+            <h4 class="title">Java Quiz GUI App</h4>
+            <p class="desc">
+              Coded a basic quiz application using JSE and Java Swing components
+              as a beginner.
+            </p>
+            <div class="buttons">
+              <a
+                href="https://drive.google.com/file/d/1a_L51ffQVRs6pTev8zv_Wm-IrCXJ0aYe/view?usp=sharing"
+                class="button"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/PushprajSChauhan/java-quiz"
+                class="button"
+                >Source Code</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Portfolio Section Ends Here -->
+
+    <!-- Contact Section Starts Here -->
+    <section id="contact" class="slide">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="title heading">Contact Me</h1>
+            <div class="content">
+              <p>
+                <i class="fa-solid fa-envelope"></i
+                >chauhanpushprajsingh003@gmail.com
+              </p>
+              <p><i class="fa-solid fa-phone"></i>6264490311</p>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/pschauhan2k3/"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="https://github.com/PushprajSChauhan"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a href="https://www.instagram.com/pushpraj_s_c/"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </div>
+            </div>
+            <a href="/assets/Pushpraj's Resume (1).pdf" download class="btn">
+              <i class="fa-solid fa-download"></i>Download Resume
+            </a>
+          </div>
+          <div class="contact-right">
+            <form action="" class="contact-form" name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                id=""
+                cols="30"
+                placeholder="Your Message"
+                rows="6"
+              ></textarea>
+              <button type="submit" class="btn">
+                <i class="fa-regular fa-paper-plane"></i>Send Message
+              </button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section Ends Here -->
+
+    <!-- Footer Section Starts Here -->
+    <section id="footer">
+      <div class="copyright">
+        <p>
+          Copyright &copy; 2024 by Pushpraj Singh Chauhan | All Rights Reserved.
+        </p>
+        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </section>
+    <!-- Footer Section Ends Here -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbz3D9LyAogpH_ka-rxckYwmnXphv0sapnYicnG-6Pvp06_b42dDAL9rD7tpnak0fbiTrQ/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "&#9989; Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 4000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

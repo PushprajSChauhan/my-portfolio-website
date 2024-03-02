@@ -1,0 +1,806 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Prompt&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  outline: none;
+  border: none;
+}
+
+body {
+  background-image: url("assets/images/bg-2.jpg");
+  min-height: 100vh;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+.slide {
+  position: relative;
+  padding: 3%;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+  box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
+}
+
+::-webkit-scrollbar {
+  height: 0;
+  width: 0.5rem;
+}
+
+/* ::-webkit-scrollbar-track {
+  background-color: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+
+}
+
+@keyframes scroll {
+  0% {
+    scrollbar-color: pink;
+  }
+  25% {
+    scrollbar-color: rgb(0, 174, 255);
+  }
+  50% {
+    scrollbar-color: yellow;
+  }
+  75% {
+    scrollbar-color: rgb(48, 255, 48);
+  }
+  100% {
+    scrollbar-color: bisque;
+  }
+} */
+
+/* Navbar Section Designing */
+#header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px 100px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 0.1em solid rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+#header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  transition: 0.45s;
+}
+
+#header:hover::before {
+  left: 100%;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.6rem;
+  text-decoration: none;
+  font-family: "Poppins";
+  font-weight: 600;
+  cursor: default;
+}
+
+.logo span {
+  color: greenyellow;
+}
+
+.navbar a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+  font-family: "Poppins";
+  margin-left: 2.3rem;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: greenyellow;
+  font-weight: bold;
+}
+
+#menu-icon,
+#close {
+  font-size: 1.5rem;
+  color: greenyellow;
+  display: none;
+}
+
+/* Home Section Designing */
+#home {
+  z-index: 1;
+}
+
+#home .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#home .container img {
+  width: 30vw;
+  height: 100%;
+  border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+  filter: drop-shadow(0 0.4rem 0.3rem rgba(0, 0, 0, 0.4));
+  margin-left: 10rem;
+  margin-top: 8rem;
+  animation: floatImage 12s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+  }
+  50% {
+    transform: translateY(-2rem);
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+  }
+  100% {
+    transform: translateY(0);
+    border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+  }
+}
+
+.header-text {
+  /* margin-top: 4%; */
+  font-family: "Kanit";
+  font-size: 1.5rem;
+  color: #fff;
+  /* padding: 2rem; */
+}
+
+.header-text h1 {
+  font-size: 3.3rem;
+  margin-top: 0.2rem;
+  background: -webkit-linear-gradient(#fff2bd, #ebb58a);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Kaushan Script";
+}
+
+.header-text p {
+  font-size: 2rem;
+}
+
+.content {
+  /* width: 50%; */
+  padding: 3%;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.7);
+  /* min-height: 50vh; */
+}
+
+/* About Section Designing */
+#about {
+  padding: 5rem 10%;
+  background-image: url("assets/images/bg-3.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+}
+
+.about-col-1 {
+  flex-basis: 35%;
+}
+
+.about-col-1 img {
+  width: 80%;
+  height: 100%;
+  border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+  filter: drop-shadow(0 0.4rem 0.3rem rgba(0, 0, 0, 0.4));
+  animation: morph 10s linear infinite;
+}
+
+@keyframes morph {
+  0%,
+  100% {
+    border-radius: 40% 60% 70% 30% / 40% 40% 60% 50%;
+    transform: scale(1.2);
+  }
+  30% {
+    border-radius: 70% 30% 50% 50% / 30% 30% 70% 70%;
+    transform: scale(1.15);
+  }
+  60% {
+    border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+    transform: scale(1.1);
+  }
+  80% {
+    border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
+    transform: scale(1.15);
+  }
+}
+
+.about-col-2 {
+  flex-basis: 60%;
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+  color: whitesmoke;
+  line-height: 2rem;
+  font-weight: bolder;
+}
+
+.about-col-2 .content {
+  background-color: rgba(255, 62, 165, 0.8);
+}
+
+.about-col-2 h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 1px 1px 2px white, 0 0 25px pink, 0 0 5px red;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+}
+
+/* Skills Section Designing */
+#skills {
+  padding: 5rem 10%;
+  background-image: url("assets/images/bg-4.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.skills-main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 3rem;
+  grid-column-gap: 6rem;
+}
+
+.skills-main .content {
+  font-size: 1.1rem;
+  color: whitesmoke;
+  font-family: "Prompt";
+  background-color: rgba(5, 63, 94, 0.8);
+}
+
+#skills .container {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  font-family: "Montserrat";
+  color: rgb(89, 213, 225);
+  text-shadow: 0px 0px 2px rgb(89, 213, 225), 0 0 5px blue, 0 0 5px lightblue;
+}
+
+.skill-bar {
+  margin-bottom: 1.8rem;
+}
+
+.skill-bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.6rem;
+  color: rgb(21, 245, 186);
+}
+
+.skill-bar .bar {
+  width: 100%;
+  height: 0.8rem;
+  border-radius: 2.3rem;
+  margin-top: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+
+.skill-bar .bar span {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background-color: rgb(255, 215, 0);
+  box-shadow: 0px 0px 3px lightgoldenrodyellow;
+  border-radius: 2.3rem;
+  transition: transform 0.1s ease;
+}
+
+.skill-bar .bar span:hover {
+  transform: scale(1.05);
+}
+
+.skill-bar .bar .java {
+  width: 85%;
+  animation: java 3s ease-in-out;
+}
+
+.skill-bar .bar .jee {
+  width: 70%;
+  animation: jee 3s ease-in-out;
+}
+
+.skill-bar .bar .sql {
+  width: 60%;
+  animation: sql 3s ease-in-out;
+}
+
+.skill-bar .bar .jdbc {
+  width: 75%;
+  animation: jdbc 3s ease-in-out;
+}
+
+.skill-bar .bar .html {
+  width: 70%;
+  animation: html 3s ease-in-out;
+}
+
+.skill-bar .bar .css {
+  width: 65%;
+  animation: css 3s ease-in-out;
+}
+
+.skill-bar .bar .js {
+  width: 70%;
+  animation: js 3s ease-in-out;
+}
+
+.skill-bar .bar .cpp {
+  width: 75%;
+  animation: cpp 3s ease-in-out;
+}
+
+.skill-bar .bar .github {
+  width: 65%;
+  animation: github 3s ease-in-out;
+}
+
+.skill-bar .bar .spring {
+  width: 40%;
+  animation: spring 3s ease-in-out;
+}
+
+@keyframes java {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+@keyframes jee {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes sql {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes jdbc {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes js {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes cpp {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes github {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+@keyframes spring {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 40%;
+  }
+}
+
+/* Portfolio Section Designing */
+#portfolio {
+  padding: 5rem 10%;
+  background-image: url("assets/images/bg-5.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  max-height: 100vh;
+}
+
+#portfolio h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  font-family: "Montserrat";
+  color: rgb(132, 255, 140);
+  text-shadow: 0px 0px 2px rgb(132, 255, 140), 0 0 5px green, 0 0 5px darkgreen;
+}
+
+.portfolio-container {
+  display: grid;
+  align-items: center;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  max-height: 80vh;
+}
+
+.portfolio-content {
+  position: relative;
+  width: 25rem;
+  height: 13rem;
+  /* aspect-ratio: 1/1; */
+  background-color: rgba(171, 255, 176, 0.7);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 5px blueviolet;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.portfolio-content img {
+  width: 25rem;
+  /* fill: #333; */
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.portfolio-content-image {
+  width: 100%;
+  height: 100%;
+}
+
+.portfolio-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 8px rgba(255, 255, 255, 0.2);
+}
+
+.portfolio-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #59d5e0;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.portfolio-content:hover .portfolio-box {
+  transform: rotateX(0deg);
+}
+
+.portfolio-box .title {
+  text-align: center;
+}
+
+.title {
+  margin: 0;
+  font-size: 20px;
+  color: #f4538a;
+  font-weight: 700;
+  font-family: "Poppins";
+}
+
+.portfolio-content:hover img {
+  scale: 0;
+}
+
+.desc {
+  margin: 10px 5px 10px;
+  font-size: 1rem;
+  line-height: 1;
+  font-family: "Mulish";
+}
+
+.portfolio-box .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  margin-top: 1rem;
+}
+
+.button {
+  padding: 0.5rem;
+  border-radius: 8px;
+  display: inline-block;
+  background-color: rgb(255, 0, 255);
+  font-weight: 500;
+  border-radius: 1rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Nunito";
+  cursor: pointer;
+  font-size: 1rem;
+  border: 2px solid black;
+}
+
+/* Contact Section Designing */
+#contact {
+  padding: 5rem 10%;
+  background-image: url("assets/images/bg-6.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+.contact-left {
+  flex-basis: 35%;
+  margin-top: -2rem;
+}
+
+.contact-right {
+  flex-basis: 60%;
+  margin-top: -2rem;
+}
+
+.contact-left .title {
+  font-family: "Montserrat";
+  font-weight: 600;
+  padding: 1.5rem;
+  font-size: 4rem;
+  text-shadow: 1px 1px 2px white, 0 0 25px lightblue, 0 0 5px blue;
+  color: lightskyblue;
+  margin-bottom: 2rem;
+}
+
+.contact-left p {
+  padding-bottom: 2rem;
+  font-family: "Nunito";
+  font-weight: 600;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.contact-left p i {
+  color: aqua;
+  margin-right: 0.7rem;
+  font-size: 1.5rem;
+  justify-self: center;
+}
+
+.social-icons {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: aqua;
+  font-size: 2rem;
+  transition: transform 0.4s;
+}
+
+.social-icons a:hover {
+  color: white;
+  transform: translateY(-5px);
+}
+
+.contact-left .content {
+  background-color: rgba(250, 250, 210, 0.4);
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.contact-left .btn {
+  display: inline-block;
+  background-color: lightgreen;
+  padding: 1rem 3rem;
+  margin-top: 4rem;
+  font-weight: 650;
+  border-radius: 1rem;
+  margin-left: 4.7rem;
+  color: purple;
+  text-decoration: none;
+  font-family: "Nunito";
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: transform 0.2s ease;
+}
+
+.contact-left .btn:hover {
+  box-shadow: 0 0 7px rgba(209, 0, 209, 0.7);
+  transform: scale(1.05);
+}
+
+.contact-left .btn i {
+  margin-right: 1rem;
+}
+
+.contact-right form {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  padding: 1rem;
+  margin: 1.2rem 0;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  font-family: "Nunito";
+  box-shadow: 0 0 10px rgba(0, 0, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.5);
+  font-weight: 400;
+  color: #000;
+}
+
+form textarea {
+  resize: none;
+}
+
+form .btn {
+  cursor: pointer;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 650;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  margin-left: 15rem;
+  font-family: "Nunito";
+  background-color: lightgreen;
+  color: purple;
+  transition: transform 0.2s ease;
+}
+
+form .btn:hover {
+  box-shadow: 0 0 7px rgba(209, 0, 209, 0.7);
+  transform: scale(1.05);
+}
+
+form .btn i {
+  margin-right: 1rem;
+}
+
+#msg {
+  color: rgb(255, 251, 0);
+  margin-top: 2rem;
+  justify-items: center;
+  display: block;
+  font-size: 1.2rem;
+  font-family: "Nunito";
+  margin-left: 14rem;
+}
+
+/* Footer Section Designing */
+#footer .copyright {
+  position: absolute;
+  width: 100vw;
+  align-items: center;
+  display: flex;
+  padding: 1rem 10%;
+  font-weight: 500;
+  background-color: rgb(35, 35, 35);
+  color: white;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: "Rubik";
+}
+
+.copyright a {
+  display: inline-flex;
+  justify-content: center;
+  background-color: white;
+  align-items: center;
+  border-radius: 10%;
+  padding: 0.6rem;
+  transition: 0.25s ease;
+  text-decoration: none;
+  width: 2.2rem;
+}
+
+.copyright a:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgb(164, 255, 28);
+}
+
+.copyright a i {
+  font-size: 1.2rem;
+  color: rgb(255, 30, 139);
+}
