@@ -149,14 +149,17 @@ body {
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
+  margin-top: 2.3rem;
 }
 
 #home .container img {
-  width: 30vw;
-  height: 100%;
+  width: 25vw;
+  height: 50%;
+  position: absolute;
+  top: 10%;
+  right: 5%;
   border-radius: 69% 31% 66% 34% / 21% 30% 70% 79%;
   filter: drop-shadow(0 0.4rem 0.3rem rgba(0, 0, 0, 0.4));
-  margin-left: 10rem;
   margin-top: 8rem;
   animation: floatImage 12s ease-in-out infinite;
 }
@@ -179,8 +182,12 @@ body {
 .header-text {
   /* margin-top: 4%; */
   font-family: "Kanit";
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
   color: #fff;
+  position: absolute;
+  left: 7%;
+  top: 32%;
+  float: left;
   /* padding: 2rem; */
 }
 
