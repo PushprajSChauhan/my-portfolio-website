@@ -51,3 +51,18 @@ menuIcon.addEventListener("click", () => {
   navbar.classList.toggle("active");
   navbg.classList.toggle("active");
 });
+
+const skills = document.querySelector(".skills-main");
+
+window.addEventListener("scroll", () => {
+  const scrollPosition = window.scrollY + window.innerHeight;
+  const elementPosition = element.offsetTop + element.offsetHeight;
+
+  if (scrollPosition > elementPosition) {
+    element.style.opacity = "1";
+    element.style.transform = "translateZ(0) scale(1)";
+  } else {
+    element.style.opacity = "0";
+    element.style.transform = "translateZ(0) scale(0.6)";
+  }
+});
