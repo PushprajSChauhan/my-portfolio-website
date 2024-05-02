@@ -312,11 +312,6 @@ body {
   align-items: center;
   gap: 20px;
   margin: 20px 5px 0 5px;
-  opacity: 0;
-  transform: translateZ(0) scale(1);
-  transition-property: opacity, transform;
-  transition-duration: 1s;
-  transform: translateZ(0) scale(0.6);
 }
 
 .skills-main div {
