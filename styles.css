@@ -398,8 +398,8 @@ div img {
 
 .portfolio-content {
   position: relative;
-  width: 25rem;
-  height: 13rem;
+  width: 20rem;
+  height: 12rem;
   /* aspect-ratio: 1/1; */
   background-color: rgba(171, 255, 176, 0.7);
   border-radius: 10px;
@@ -413,7 +413,7 @@ div img {
 }
 
 .portfolio-content img {
-  width: 25rem;
+  width: 20rem;
   /* fill: #333; */
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -434,7 +434,7 @@ div img {
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 20px;
+  padding: 0.55rem;
   box-sizing: border-box;
   background-color: #59d5e0;
   transform: rotateX(-90deg);
@@ -452,7 +452,7 @@ div img {
 
 .title {
   margin: 0;
-  font-size: 20px;
+  font-size: 1.15rem;
   color: #f4538a;
   font-weight: 700;
   font-family: "Poppins";
@@ -464,7 +464,7 @@ div img {
 
 .desc {
   margin: 10px 5px 10px;
-  font-size: 1rem;
+  font-size: 0.8rem;
   line-height: 1;
   font-family: "Mulish";
 }
@@ -488,7 +488,7 @@ div img {
   text-decoration: none;
   font-family: "Nunito";
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 0.8rem;
   border: 2px solid black;
 }
 
