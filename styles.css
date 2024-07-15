@@ -389,17 +389,19 @@ div img {
 }
 
 .portfolio-container {
-  display: grid;
-  align-items: center;
+  display: flex;
+  justify-content: center;
   gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
-  max-height: 80vh;
+  flex-wrap: wrap;
+  align-items: center;
+  width: fit-content;
+  max-height: 100vh;
 }
 
 .portfolio-content {
   position: relative;
-  width: 20rem;
-  height: 12rem;
+  width: 23rem;
+  height: 13rem;
   /* aspect-ratio: 1/1; */
   background-color: rgba(171, 255, 176, 0.7);
   border-radius: 10px;
@@ -413,7 +415,7 @@ div img {
 }
 
 .portfolio-content img {
-  width: 20rem;
+  width: 23rem;
   /* fill: #333; */
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
@@ -452,7 +454,7 @@ div img {
 
 .title {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   color: #f4538a;
   font-weight: 700;
   font-family: "Poppins";
@@ -463,8 +465,8 @@ div img {
 }
 
 .desc {
-  margin: 10px 5px 10px;
-  font-size: 0.8rem;
+  margin: 0.625rem 0.3125rem 0.625rem;
+  font-size: 0.9rem;
   line-height: 1;
   font-family: "Mulish";
 }

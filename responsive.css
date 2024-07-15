@@ -111,6 +111,43 @@
     position: relative;
     left: 5%;
   }
+
+  #contact .container .row {
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+
+  .contact-left .title {
+    font-size: 3.5rem;
+    margin-left: -2rem;
+  }
+
+  .contact-left .content {
+    margin-left: -2rem;
+  }
+
+  .contact-left p {
+    font-size: 1rem;
+  }
+
+  .contact-left .btn {
+    padding: 1rem 1rem;
+    margin-left: 0.7rem;
+  }
+
+  .contact-right {
+    margin-top: -2rem;
+  }
+
+  .contact-right form {
+    margin-top: 6rem;
+    width: 115%;
+  }
+
+  form .btn {
+    padding: 1rem 2rem;
+    margin-left: 4rem;
+  }
 }
 
 @media (max-width: 571px) {
@@ -156,6 +193,69 @@
   #skills {
     background-color: #352315;
     background-image: none;
+  }
+
+  #contact {
+    background-image: none;
+    background-color: #003333;
+  }
+
+  #contact .container .row {
+    flex-wrap: wrap;
+  }
+
+  .contact-left {
+    margin-top: 0%;
+  }
+
+  .contact-left .title {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    margin-bottom: 4rem;
+    margin-top: -3rem;
+  }
+
+  .social-icons {
+    margin-top: 0rem;
+  }
+
+  .contact-left .content {
+    margin-left: -2rem;
+    margin-top: -2rem;
+    width: 145%;
+  }
+
+  .contact-left p i {
+    color: aqua;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    margin-left: 1.6rem;
+  }
+
+  .contact-left .btn {
+    padding: 1rem 1rem;
+    margin-left: 4rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+
+  .contact-right form {
+    margin-top: 3rem;
+    width: 153%;
+  }
+
+  form .btn {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+  form input::placeholder,
+  textarea::placeholder {
+    color: #001f3f;
+  }
+
+  #msg {
+    font-size: 1rem;
   }
 }
 
