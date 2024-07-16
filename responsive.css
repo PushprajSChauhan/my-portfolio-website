@@ -111,43 +111,6 @@
     position: relative;
     left: 5%;
   }
-
-  #contact .container .row {
-    flex-wrap: nowrap;
-    gap: 2rem;
-  }
-
-  .contact-left .title {
-    font-size: 3.5rem;
-    margin-left: -2rem;
-  }
-
-  .contact-left .content {
-    margin-left: -2rem;
-  }
-
-  .contact-left p {
-    font-size: 1rem;
-  }
-
-  .contact-left .btn {
-    padding: 1rem 1rem;
-    margin-left: 0.7rem;
-  }
-
-  .contact-right {
-    margin-top: -2rem;
-  }
-
-  .contact-right form {
-    margin-top: 6rem;
-    width: 115%;
-  }
-
-  form .btn {
-    padding: 1rem 2rem;
-    margin-left: 4rem;
-  }
 }
 
 @media (max-width: 571px) {
@@ -200,29 +163,17 @@
     background-color: #003333;
   }
 
-  #contact .container .row {
-    flex-wrap: wrap;
-  }
-
   .contact-left {
     margin-top: 0%;
   }
 
   .contact-left .title {
     font-size: 2.5rem;
-    margin-left: 2rem;
-    margin-bottom: 4rem;
-    margin-top: -3rem;
+    margin: -3rem 0 4rem 2rem;
   }
 
   .social-icons {
     margin-top: 0rem;
-  }
-
-  .contact-left .content {
-    margin-left: -2rem;
-    margin-top: -2rem;
-    width: 145%;
   }
 
   .contact-left p i {
@@ -251,7 +202,7 @@
 
   form input::placeholder,
   textarea::placeholder {
-    color: #001f3f;
+    color: #00ffff;
   }
 
   #msg {
@@ -481,6 +432,229 @@
 
   .skills-main div p {
     font-size: 0.75rem;
+  }
+}
+
+/* Contact content */
+@media (max-width: 1102px) {
+  form .btn {
+    margin-left: 7rem;
+  }
+
+  .contact-left .btn {
+    margin-left: 3.3rem;
+  }
+}
+
+@media (max-width: 990px) {
+  .contact-left .title {
+    font-size: 3.5rem;
+  }
+
+  .contact-left p {
+    font-size: 1.1rem;
+  }
+
+  .contact-left .btn {
+    margin-left: 2.3rem;
+    font-size: 1rem;
+  }
+
+  #contact .row {
+    gap: 4rem;
+  }
+
+  form .btn {
+    margin-left: 4.8rem;
+    font-size: 1rem;
+  }
+
+  form input,
+  form textarea {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 910px) {
+  form .btn {
+    padding: 1rem 2rem;
+    margin-left: 3.8rem;
+  }
+
+  .contact-left .btn {
+    margin-left: 4.5rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 851px) {
+  form .btn {
+    padding: 1rem 1rem;
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 772px) {
+  .contact-left .btn {
+    margin-left: 1.6rem;
+  }
+
+  form .btn {
+    padding: 1rem 1.5rem;
+    margin-left: 5rem;
+  }
+
+  #contact-left .container .row {
+    gap: 3rem;
+  }
+
+  #contact .container .row {
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+
+  .contact-left .title {
+    font-size: 3.5rem;
+    margin-left: -2rem;
+  }
+
+  .contact-left .content {
+    margin-left: -2rem;
+  }
+
+  .contact-left p {
+    font-size: 1rem;
+  }
+
+  .contact-left .btn {
+    padding: 1rem 1rem;
+    margin-left: 0.7rem;
+  }
+
+  .contact-right {
+    margin-top: -2rem;
+  }
+
+  .contact-right form {
+    margin-top: 6rem;
+    width: 115%;
+  }
+
+  form .btn {
+    padding: 1rem 2rem;
+    margin-left: 4rem;
+  }
+}
+
+@media (max-width: 680px) {
+  #contact .container .row {
+    flex-wrap: wrap;
+  }
+
+  .contact-left .title {
+    margin-left: 6rem;
+  }
+
+  .contact-left .content {
+    margin-left: 6rem;
+  }
+
+  .contact-left .btn {
+    margin-top: 2rem;
+    margin-left: 11rem;
+  }
+
+  .contact-left p i {
+    margin-left: 0.4rem;
+  }
+
+  .social-icons {
+    margin-top: 0;
+  }
+
+  .contact-right form {
+    width: 100%;
+    margin-left: 0.4rem;
+  }
+
+  form .btn {
+    margin-left: 11rem;
+  }
+}
+
+@media (max-width: 610px) {
+  .contact-left {
+    margin-left: -1.7rem;
+  }
+
+  form .btn {
+    margin-left: 9rem;
+  }
+}
+
+@media (max-width: 550px) {
+  .contact-left .title {
+    font-size: 3rem;
+  }
+
+  .contact-left .content {
+    margin-left: 5rem;
+  }
+
+  .contact-left .btn {
+    margin-left: 10rem;
+  }
+
+  form .btn {
+    margin-left: 7rem;
+  }
+}
+
+@media (max-width: 430px) {
+  form .btn {
+    margin-left: 4.5rem;
+  }
+
+  .contact-left .title {
+    margin-left: 4rem;
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-left .content {
+    margin-left: 3.5rem;
+  }
+
+  .contact-left .btn {
+    margin-left: 7rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .contact-left .title {
+    font-size: 2rem;
+    margin-left: 2.5rem;
+  }
+
+  .contact-left .content {
+    margin-left: 1rem;
+    max-width: 18rem;
+  }
+
+  .contact-left p {
+    margin-left: -0.7rem;
+  }
+
+  .contact-left p i {
+    margin-left: 7.8rem;
+  }
+
+  .contact-left .btn {
+    margin-left: 4rem;
+  }
+
+  form .btn {
+    margin-left: 1.7rem;
   }
 }
 

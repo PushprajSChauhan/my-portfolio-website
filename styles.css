@@ -505,13 +505,19 @@ div img {
   min-height: 100vh;
 }
 
+#contact .row {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
 .contact-left {
-  flex-basis: 35%;
   margin-top: -2rem;
 }
 
 .contact-right {
-  flex-basis: 60%;
   margin-top: -2rem;
 }
 
@@ -537,7 +543,6 @@ div img {
   color: aqua;
   margin-right: 0.7rem;
   font-size: 1.5rem;
-  justify-self: center;
 }
 
 .social-icons {
