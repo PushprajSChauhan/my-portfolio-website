@@ -382,116 +382,84 @@ div img {
   font-size: 3rem;
   text-align: center;
   margin-bottom: 1.5rem;
-  padding: 1rem;
+  padding: 0.5rem;
   font-family: "Montserrat";
   color: rgb(132, 255, 140);
   text-shadow: 0px 0px 2px rgb(132, 255, 140), 0 0 5px green, 0 0 5px darkgreen;
 }
 
 .portfolio-container {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  align-items: center;
-  width: fit-content;
-  max-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 3rem;
+  width: 80vw;
 }
 
-.portfolio-content {
-  position: relative;
-  width: 23rem;
-  height: 13rem;
-  /* aspect-ratio: 1/1; */
-  background-color: rgba(171, 255, 176, 0.7);
-  border-radius: 10px;
+.portfolio-container .portfolio-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
-  perspective: 1000px;
-  box-shadow: 0 0 5px blueviolet;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.portfolio-content img {
-  width: 23rem;
-  /* fill: #333; */
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.portfolio-content-image {
-  width: 100%;
-  height: 100%;
-}
-
-.portfolio-content:hover {
-  transform: scale(1.05);
-  box-shadow: 0 8px 8px rgba(255, 255, 255, 0.2);
-}
-
-.portfolio-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding: 0.55rem;
-  box-sizing: border-box;
-  background-color: #59d5e0;
-  transform: rotateX(-90deg);
-  transform-origin: bottom;
-  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.portfolio-content:hover .portfolio-box {
-  transform: rotateX(0deg);
-}
-
-.portfolio-box .title {
+  flex-direction: column;
   text-align: center;
+  height: 14rem;
+  width: 24rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 400ms;
+  padding: 1rem;
+  transition: 400ms;
+  background-color: #f5f5dc;
 }
 
-.title {
-  margin: 0;
-  font-size: 1.25rem;
-  color: #f4538a;
+.portfolio-container .portfolio-content .title {
+  font-size: 1.1rem;
+  color: #083358;
   font-weight: 700;
   font-family: "Poppins";
+  margin-bottom: 0.5rem;
 }
 
-.portfolio-content:hover img {
-  scale: 0;
-}
-
-.desc {
-  margin: 0.625rem 0.3125rem 0.625rem;
+.portfolio-container .portfolio-content .desc {
+  margin: 0.625rem 0.3125rem 3.625rem;
   font-size: 0.9rem;
   line-height: 1;
   font-family: "Mulish";
+  color: #2a3d55;
 }
 
-.portfolio-box .buttons {
-  display: flex;
+.portfolio-container .portfolio-content:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.portfolio-container:hover > .portfolio-content:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
+}
+
+.buttons {
+  display: inline-flex;
   align-items: center;
   justify-content: space-evenly;
-  position: relative;
-  margin-top: 1rem;
+  position: absolute;
+  margin-top: 9rem;
+  margin-left: 2.5rem;
 }
 
 .button {
-  padding: 0.5rem;
-  border-radius: 8px;
+  padding: 0.7rem;
   display: inline-block;
-  background-color: rgb(255, 0, 255);
+  background-color: #40e0d0;
   font-weight: 500;
-  border-radius: 1rem;
-  color: white;
+  border-radius: 1.5rem;
+  color: #005454;
   text-decoration: none;
+  font-weight: 700;
   font-family: "Nunito";
   cursor: pointer;
   font-size: 0.8rem;
   border: 2px solid black;
+  margin-right: 2rem;
 }
 
 /* Contact Section Designing */
